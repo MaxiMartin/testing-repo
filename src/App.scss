@@ -1,0 +1,36 @@
+.test-grid-container {
+    div {
+        display: flex;
+        .flexible-item {
+            flex: 1;
+            flex-wrap: nowrap;
+            width: auto;
+        }
+        .fecha-item {
+            width: 200px;
+        }
+    }
+    .select-item {
+        min-width: calc(100% - 16px);
+        padding: 8px;
+        .select-label[data-shrink=true] {
+            display: none;
+        }
+        .select {
+            margin-top: 0;
+            div[role=button] {
+                min-width: calc(100% - 32px);
+            }
+        }
+    }
+    .text-input {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 8px;
+    }
+    input {
+        width: 100%;
+    }
+}
+
